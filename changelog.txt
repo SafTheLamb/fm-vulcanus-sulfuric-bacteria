@@ -1,7 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.1
+  Major Features:
+    - Add Sulfuric bacteria melting, which can be used to filter tungsten and coal from stone.
+  Changes:
+    - Reduce time required to synthesize resin and reconstitute wood to 0.5.
+    - Change filtering recipe to use charcoal if Wooden Industry is installed.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.0
   Major Features:
-    - Add new Agricultural camp, which is an early-game variant of the agricultural tower
-    - Add new Space garden entity for growing wood in space
-  Changes:
-    - Buff planted Nauvis Trees to give 10 wood in 5 minutes
+    - Initial release.

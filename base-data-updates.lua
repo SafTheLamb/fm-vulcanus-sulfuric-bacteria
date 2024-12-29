@@ -3,18 +3,19 @@
 local vulcanus = data.raw.planet["vulcanus"]
 vulcanus.map_gen_settings.autoplace_settings["entity"].settings["sulfuric-stromatolite"] = {}
 
--------------------------------------------------------------------------- Enemy changes
+-------------------------------------------------------------------------- Entity changes
 
-local demolisher_corpses = {
-  "small-demolisher-corpse",
-  "medium-demolisher-corpse",
-  "big-demolisher-corpse",
-  "behemoth-demolisher-corpse",
+local sulfuric_entities = {
+  {name="vulcanus-chimney", min=3, max=7},
+  {name="small-demolisher-corpse", min=20, max=34},
+  {name="medium-demolisher-corpse", min=30, max=49},
+  {name="big-demolisher-corpse", min=40, max=54},
+  {name="behemoth-demolisher-corpse", min=50, max=69}
 }
 
-for i,corpse_name in pairs(demolisher_corpses) do
-  local corpse = data.raw["simple-entity"][corpse_name]
+for i,entity in pairs(sulfuric_entities) do
+  local corpse = data.raw["simple-entity"][entity.name]
   if corpse then
-    table.insert(corpse.minable.results, {type="item", name="sulfuric-bacteria", amount_min=10*i+10, amount_max=15*i+19})
+    table.insert(corpse.minable.results, {type="item", name="sulfuric-bacteria", amount_min=entity.min, amount_max=entity.max})
   end
 end

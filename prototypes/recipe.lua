@@ -16,7 +16,7 @@ data:extend({
     energy_required = 2,
     ingredients = {
       {type="fluid", name="sulfuric-acid", amount=100},
-      {type="item", name="coal", amount=1},
+      {type="item", name=mods["wood-industry"] and "charcoal" or "coal", amount=1},
       {type="item", name="calcite", amount=1}
     },
     results = {
@@ -81,6 +81,31 @@ data:extend({
       primary = {r=1.000, g=0.457, b=0.000, a=1.000}, -- #ff7400ff
       secondary = {r=1.000, g=0.196, b=0.000, a=1.000}, -- #ff3100ff
     }
+  },
+  {
+    type = "recipe",
+    name = "sulfuric-bacteria-melting",
+    icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-melting.png",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "e[bacteria]-a[sulfuric]-d[melting]",
+    enabled = false,
+    allow_productivity = true,
+    auto_recycle = false,
+    energy_required = 2,
+    ingredients = {
+      {type="item", name="sulfuric-bacteria", amount=1},
+      {type="item", name="stone", amount=2},
+      {type="fluid", name="lava", amount=50}
+    },
+    results = {
+      {type="item", name="sulfuric-bacteria", amount=1, probability=0.75, ignored_by_productivity=1},
+      {type="item", name="tungsten-ore",      amount=1, probability=0.15},
+      {type="item", name="coal",              amount=1, probability=0.10},
+      {type="item", name="carbon",            amount=1, probability=0.06},
+      {type="item", name="tungsten-carbide",  amount=1, probability=0.04},
+      {type="item", name="stone",             amount=1, probability=0.4}
+    }
   }
 })
 
@@ -97,7 +122,6 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       category = "chemistry-or-cryogenics",
       subgroup = "vulcanus-processes",
       order = "f[wood]-b[synthetic-resin]",
-      energy_required = 2,
       enabled = false,
       allow_productivity = true,
       auto_recycle = false,
@@ -117,7 +141,6 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       category = "organic-or-assembling",
       subgroup = "vulcanus-processes",
       order = "f[wood]-c[reconstituted-wood]",
-      energy_required = 2,
       enabled = false,
       allow_productivity = true,
       auto_recycle = false,
