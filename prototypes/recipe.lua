@@ -113,26 +113,6 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
   data:extend({
     {
       type = "recipe",
-      name = "synthetic-resin",
-      localised_name = {"recipe-name.synthetic-resin"},
-      icons = {
-        {icon="__wood-base-assets__/graphics/icons/resin.png"},
-        {icon="__base__/graphics/icons/fluid/petroleum-gas.png", shift={-8,-8}, scale=0.3}
-      },
-      category = "chemistry-or-cryogenics",
-      subgroup = "vulcanus-processes",
-      order = "f[wood]-b[synthetic-resin]",
-      enabled = false,
-      allow_productivity = true,
-      auto_recycle = false,
-      ingredients = {
-        {type="item", name="coal", amount=1},
-        {type="fluid", name="petroleum-gas", amount=30}
-      },
-      results = {{type="item", name="resin", amount=2}}
-    },
-    {
-      type = "recipe",
       name = "reconstituted-wood",
       icons = {
         {icon="__base__/graphics/icons/wood.png"},

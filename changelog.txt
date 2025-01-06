@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.2
+  Changes:
+    - Move Synthetic resin recipe to Wooden Industry (for Cerys compat)
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.1
   Major Features:
     - Add Sulfuric bacteria melting, which can be used to filter tungsten and coal from stone.
