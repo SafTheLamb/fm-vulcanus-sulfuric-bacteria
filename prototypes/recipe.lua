@@ -124,6 +124,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       enabled = false,
       allow_productivity = true,
       auto_recycle = false,
+      allow_decomposition = false,
       ingredients = {
         {type="item", name="woodchips", amount=5},
         {type="item", name="resin", amount=1}
