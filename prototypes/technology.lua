@@ -7,9 +7,8 @@ data:extend({
     effects = {
       {type="unlock-recipe", recipe="sulfuric-bacteria-filtering"},
       {type="unlock-recipe", recipe="sulfuric-bacteria-cultivation"},
-      {type="unlock-recipe", recipe="sulfuric-bacteria-pruning"},
     },
-    prerequisites = {"calcite-processing", "tungsten-carbide"},
+    prerequisites = {"calcite-processing"},
     research_trigger = {
       type = "mine-entity",
       entity = "sulfuric-stromatolite"
@@ -23,7 +22,7 @@ data:extend({
     effects = {
       {type="unlock-recipe", recipe="sulfuric-bacteria-melting"}
     },
-    prerequisites = {"metallurgic-science-pack", "sulfuric-bacteria-cultivation"},
+    prerequisites = {"metallurgic-science-pack"},
     unit = {
       count = 200,
       ingredients = {

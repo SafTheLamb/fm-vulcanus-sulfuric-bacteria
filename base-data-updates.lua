@@ -1,3 +1,13 @@
+local ftech = require("__fdsl__.lib.technology")
+
+if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
+  ftech.add_unlock("sulfuric-bacteria-cultivation", "reconstituted-wood-vulcanus")
+end
+
+ftech.add_unlock("foundry", "sulfuric-bacteria-pruning")
+
+ftech.add_prereq("metallurgic-science-pack", "sulfuric-bacteria-cultivation")
+
 -------------------------------------------------------------------------- Map gen changes
 
 local vulcanus = data.raw.planet["vulcanus"]

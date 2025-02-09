@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+  Changes:
+    - Customize reconstituted wood recipe for Vulcanus, nerfing infinite-wood exploit outside of Vulcanus
+    - Changed sulfuric bacteria pruning to yield sulfur instead of more woodchips
+    - Miscellaneous technology prerequisite and unlock changes
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.3
   Changes:
     - Reconstituted wood no longer affects "Total raw" yield

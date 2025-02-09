@@ -62,7 +62,7 @@ data:extend({
     icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-pruning.png",
     category = "organic-or-chemistry",
     subgroup = "vulcanus-processes",
-    order = "e[bacteria]-a[sulfuric]-c[pruning]",
+    order = "e[bacteria]-a[sulfuric]-d[pruning]",
     surface_conditions = {
       {property="pressure", min=4000, max=4000}
     },
@@ -71,11 +71,11 @@ data:extend({
     auto_recycle = false,
     energy_required = 4,
     ingredients = {
-      {type="item", name="sulfuric-bacteria", amount=3},
-      {type="item", name="tungsten-carbide", amount=1}
+      {type="item", name="sulfuric-bacteria", amount=5},
+      {type="item", name="tungsten-carbide", amount=1},
     },
     results = {
-      {type="item", name=chips_item, amount=20}
+      {type="item", name="sulfur", amount=5}
     },
     crafting_machine_tint = {
       primary = {r=1.000, g=0.457, b=0.000, a=1.000}, -- #ff7400ff
@@ -88,7 +88,7 @@ data:extend({
     icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-melting.png",
     category = "metallurgy",
     subgroup = "vulcanus-processes",
-    order = "e[bacteria]-a[sulfuric]-d[melting]",
+    order = "e[bacteria]-a[sulfuric]-e[melting]",
     enabled = false,
     allow_productivity = true,
     auto_recycle = false,
@@ -113,23 +113,26 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
   data:extend({
     {
       type = "recipe",
-      name = "reconstituted-wood",
+      name = "reconstituted-wood-vulcanus",
       icons = {
-        {icon="__base__/graphics/icons/wood.png"},
-        {icon="__wood-base-assets__/graphics/icons/resin.png", shift={-8,-8}, scale=0.3, draw_background=true}
+        {icon="__wood-universe-assets__/graphics/icons/sulfuric-bacteria.png", shift={-8,-8}, scale=0.3},
+        {icon="__wood-base-assets__/graphics/icons/resin.png", shift={8,-8}, scale=0.4},
+        {icon="__base__/graphics/icons/wood.png"}
       },
-      category = "organic-or-assembling",
+      category = "organic-or-chemistry",
       subgroup = "vulcanus-processes",
-      order = "f[wood]-c[reconstituted-wood]",
+      order = "e[bacteria]-a[sulfuric]-c[wood]",
       enabled = false,
       allow_productivity = true,
       auto_recycle = false,
-      allow_decomposition = false,
+      energy_required = 1,
       ingredients = {
-        {type="item", name="woodchips", amount=5},
-        {type="item", name="resin", amount=1}
+        {type="item", name="sulfuric-bacteria", amount=5},
+        {type="item", name="resin", amount=1},
+        {type="fluid", name="steam", amount=10}
       },
-      results = {{type="item", name="wood", amount=2}}
+      results = {{type="item", name="wood", amount=2}},
+      main_product = ""
     }
   })
 end
