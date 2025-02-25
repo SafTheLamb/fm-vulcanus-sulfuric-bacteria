@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+  Compatibility:
+    - Add compatibility for Bioprocessing Group
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
   Changes:
     - Customize reconstituted wood recipe for Vulcanus, nerfing infinite-wood exploit outside of Vulcanus

@@ -1,11 +1,12 @@
 local chips_item = mods["wood-industry"] and settings.startup["wood-industry-resin"].value and "woodchips" or "wood"
+local subgroup = mods["bioprocessing-tab"] and "vulcanus-agriculture" or "vulcanus-processes"
 
 data:extend({
   {
     type = "recipe",
     name = "sulfuric-bacteria-filtering",
     category = "organic-or-chemistry",
-    subgroup = "vulcanus-processes",
+    subgroup = subgroup,
     order = "e[bacteria]-a[sulfuric]-a[filtering]",
     surface_conditions = {
       {property="pressure", min=4000, max=4000}
@@ -32,7 +33,7 @@ data:extend({
     name = "sulfuric-bacteria-cultivation",
     icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-cultivation.png",
     category = "organic-or-chemistry",
-    subgroup = "vulcanus-processes",
+    subgroup = subgroup,
     order = "e[bacteria]-a[sulfuric]-b[cultivation]",
     surface_conditions = {
       {property="pressure", min=4000, max=4000}
@@ -61,7 +62,7 @@ data:extend({
     name = "sulfuric-bacteria-pruning",
     icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-pruning.png",
     category = "organic-or-chemistry",
-    subgroup = "vulcanus-processes",
+    subgroup = subgroup,
     order = "e[bacteria]-a[sulfuric]-d[pruning]",
     surface_conditions = {
       {property="pressure", min=4000, max=4000}
@@ -87,7 +88,7 @@ data:extend({
     name = "sulfuric-bacteria-melting",
     icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-melting.png",
     category = "metallurgy",
-    subgroup = "vulcanus-processes",
+    subgroup = subgroup,
     order = "e[bacteria]-a[sulfuric]-e[melting]",
     enabled = false,
     allow_productivity = true,
@@ -120,7 +121,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
         {icon="__base__/graphics/icons/wood.png"}
       },
       category = "organic-or-chemistry",
-      subgroup = "vulcanus-processes",
+      subgroup = subgroup,
       order = "e[bacteria]-a[sulfuric]-c[wood]",
       enabled = false,
       allow_productivity = true,
