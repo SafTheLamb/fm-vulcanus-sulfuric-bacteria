@@ -11,7 +11,9 @@ ftech.add_prereq("metallurgic-science-pack", "sulfuric-bacteria-cultivation")
 -------------------------------------------------------------------------- Map gen changes
 
 local vulcanus = data.raw.planet["vulcanus"]
-vulcanus.map_gen_settings.autoplace_settings["entity"].settings["sulfuric-stromatolite"] = {}
+if vulcanus and vulcanus.map_gen_settings and vulcanus.map_gen_settings.autoplace_controls then
+  vulcanus.map_gen_settings.autoplace_settings["entity"].settings["sulfuric-stromatolite"] = {}
+end
 
 -------------------------------------------------------------------------- Entity changes
 

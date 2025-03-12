@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+  Bugfixes:
+    - Fix crash when Vulcanus does not have map gen settings
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
   Compatibility:
     - Add compatibility for Bioprocessing Group
