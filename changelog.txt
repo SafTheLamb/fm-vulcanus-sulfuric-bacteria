@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+  Balancing:
+    - Add resin to mine results for sulfuric stromatolite
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
   Bugfixes:
     - Fix crash when Vulcanus does not have map gen settings

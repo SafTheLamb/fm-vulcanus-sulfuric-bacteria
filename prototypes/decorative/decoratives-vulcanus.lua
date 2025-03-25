@@ -31,14 +31,13 @@ data:extend({
       probability_expression = "vulcanus_chimney_sulfuric"
     },
     dying_trigger_effect = decorative_trigger_effects.big_rock(),
-    minable =
-    {
+    minable = {
       mining_particle = "stone-particle",
       mining_time = 0.4,
       results = {
-        {type = "item", name = "stone", amount_min = 3, amount_max = 7},
-        {type = "item", name = "sulfur", amount_min = 13, amount_max = 17},
-        {type = "item", name = "sulfuric-bacteria", amount_min = 23, amount_max = 37}
+        {type="item", name="stone", amount_min=3, amount_max=7},
+        {type="item", name="sulfur", amount_min=13, amount_max=17},
+        {type="item", name="sulfuric-bacteria", amount_min=23, amount_max=37}
       }
     },
     resistances = {{type="fire", percent=100}},

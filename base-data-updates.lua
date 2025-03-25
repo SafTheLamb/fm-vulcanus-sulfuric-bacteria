@@ -31,3 +31,7 @@ for i,entity in pairs(sulfuric_entities) do
     table.insert(corpse.minable.results, {type="item", name="sulfuric-bacteria", amount_min=entity.min, amount_max=entity.max})
   end
 end
+
+if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
+  table.insert(data.raw["simple-entity"]["sulfuric-stromatolite"].minable.results, {type="item", name="resin", amount_min=7, amount_max=11})
+end
