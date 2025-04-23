@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "sulfuric-bacteria-cultivation",
-    icon = "__wood-universe-assets__/graphics/technology/sulfuric-bacteria-cultivation.png",
+    icon = "__vulcanus-sulfuric-bacteria__/graphics/technology/sulfuric-bacteria-cultivation.png",
     icon_size = 256,
     effects = {
       {type="unlock-recipe", recipe="sulfuric-bacteria-filtering"},
@@ -17,7 +17,7 @@ data:extend({
   {
     type = "technology",
     name = "sulfuric-bacteria-melting",
-    icon = "__wood-universe-assets__/graphics/technology/sulfuric-bacteria-melting.png",
+    icon = "__vulcanus-sulfuric-bacteria__/graphics/technology/sulfuric-bacteria-melting.png",
     icon_size = 256,
     effects = {
       {type="unlock-recipe", recipe="sulfuric-bacteria-melting"}

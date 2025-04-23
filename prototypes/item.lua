@@ -7,12 +7,12 @@ data:extend({
   {
     type = "item",
     name = "sulfuric-bacteria",
-    icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria.png",
+    icon = "__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria.png",
     pictures = {
-      {size=64, filename="__wood-universe-assets__/graphics/icons/sulfuric-bacteria.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/sulfuric-bacteria-1.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/sulfuric-bacteria-2.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/sulfuric-bacteria-3.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria-1.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria-2.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria-3.png", scale=0.5, mipmap_count=4},
     },
     subgroup = subgroup,
     order = "d[agriculture]-a[sulfuric-bacteria]",

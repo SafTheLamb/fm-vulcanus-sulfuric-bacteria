@@ -31,7 +31,7 @@ data:extend({
   {
     type = "recipe",
     name = "sulfuric-bacteria-cultivation",
-    icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-cultivation.png",
+    icon = "__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria-cultivation.png",
     category = "organic-or-chemistry",
     subgroup = subgroup,
     order = "e[bacteria]-a[sulfuric]-b[cultivation]",
@@ -60,7 +60,7 @@ data:extend({
   {
     type = "recipe",
     name = "sulfuric-bacteria-pruning",
-    icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-pruning.png",
+    icon = "__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria-pruning.png",
     category = "organic-or-chemistry",
     subgroup = subgroup,
     order = "e[bacteria]-a[sulfuric]-d[pruning]",
@@ -86,7 +86,7 @@ data:extend({
   {
     type = "recipe",
     name = "sulfuric-bacteria-melting",
-    icon = "__wood-universe-assets__/graphics/icons/sulfuric-bacteria-melting.png",
+    icon = "__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria-melting.png",
     category = "metallurgy",
     subgroup = subgroup,
     order = "e[bacteria]-a[sulfuric]-e[melting]",
@@ -116,8 +116,8 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       type = "recipe",
       name = "reconstituted-wood-vulcanus",
       icons = {
-        {icon="__wood-universe-assets__/graphics/icons/sulfuric-bacteria.png", shift={-8,-8}, scale=0.3},
-        {icon="__wood-base-assets__/graphics/icons/resin.png", shift={8,-8}, scale=0.4},
+        {icon="__vulcanus-sulfuric-bacteria__/graphics/icons/sulfuric-bacteria.png", shift={-8,-8}, scale=0.3},
+        {icon="__wood-industry__/graphics/icons/resin.png", shift={8,-8}, scale=0.4},
         {icon="__base__/graphics/icons/wood.png"}
       },
       category = "organic-or-chemistry",
