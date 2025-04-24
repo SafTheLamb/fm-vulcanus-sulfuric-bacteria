@@ -73,7 +73,7 @@ data:extend({
     energy_required = 2,
     ingredients = {
       {type="item", name="sulfuric-bacteria", amount=5},
-      {type="fluid", name="steam", amount=100},
+      {type="fluid", name="water", amount=100},
     },
     results = {
       {type="item", name="sulfur", amount=5}

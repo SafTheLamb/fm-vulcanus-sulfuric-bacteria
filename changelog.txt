@@ -3,7 +3,7 @@ Version: 1.1.0
 Date: 2025-04-24
   Changes:
     - Import graphics from wood universe assets
-    - Change sulfuric bacteria pruning to require steam instead of tungsten carbide
+    - Change sulfuric bacteria pruning to require water instead of tungsten carbide
   Compatibility:
     - Add support for Voidcraft
 ---------------------------------------------------------------------------------------------------
