@@ -70,10 +70,10 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     auto_recycle = false,
-    energy_required = 4,
+    energy_required = 2,
     ingredients = {
       {type="item", name="sulfuric-bacteria", amount=5},
-      {type="item", name="tungsten-carbide", amount=1},
+      {type="fluid", name="steam", amount=100},
     },
     results = {
       {type="item", name="sulfur", amount=5}
