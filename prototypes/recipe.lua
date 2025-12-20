@@ -132,7 +132,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
         {type="item", name="resin", amount=1},
         {type="fluid", name="steam", amount=10}
       },
-      results = {{type="item", name="wood", amount=2}},
+      results = {{type="item", name="wood", amount=3}},
       main_product = ""
     }
   })

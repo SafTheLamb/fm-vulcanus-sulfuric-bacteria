@@ -1,6 +1,7 @@
 local space_age_item_sounds = require("__space-age__.prototypes.item_sounds")
-local chips_item = mods["wood-industry"] and settings.startup["wood-industry-resin"].value and "woodchips" or "wood"
+local multispoil = require("__multispoil__.api")
 
+local chips_item = mods["wood-industry"] and settings.startup["wood-industry-resin"].value and "woodchips" or "wood"
 local subgroup = mods["bioprocessing-tab"] and "vulcanus-agriculture" or "vulcanus-processes"
 
 data:extend({
@@ -23,6 +24,9 @@ data:extend({
     default_import_location = "vulcanus",
     weight = 1 * kg,
     spoil_ticks = 60 * second,
-    spoil_result = chips_item
+    spoil_result = chips_item,
+    spoil_to_trigger_result = multispoil.create_spoil_trigger({
+      [chips_item] = 1 -- the spoil_result still applies, so the total amount is actually 2
+    })
   }
 })
