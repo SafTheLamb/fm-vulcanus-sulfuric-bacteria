@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
-Date: ????
+Date: 2025-12-20
   Changes:
     - Sulfuric bacteria now uses the Multispoil API to spoil into 2 wood/woodchips, instead of 1
     - Reconstituted wood changed to yield 3 wood from 2 (+50%)
