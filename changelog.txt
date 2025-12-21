@@ -2,6 +2,7 @@
 Version: 1.2.1
 Date: ????
   Changes:
+    - Revert use of Multispoil API: Works great for items that you keep in chests until they spoil, but not for sulfuric bacteria
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 2025-12-20

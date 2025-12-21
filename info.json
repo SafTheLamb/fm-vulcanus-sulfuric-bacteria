@@ -9,7 +9,6 @@
   "dependencies": [
     "base >= 2.0.7",
     "fdsl >= 0.1.5",
-    "multispoil >= 2.1.1",
     "space-age",
     "? wood-industry >= 1.5.0",
     "(?) Voidcraft >= 1.4"
