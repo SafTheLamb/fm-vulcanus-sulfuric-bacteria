@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.2
 Date: ????
-  Changes:
+  Bugfixes:
+    - Sulfuric stromatolite now generates in existing saves when added after vulcanus has been generated
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 2025-12-21
